@@ -5,11 +5,11 @@ cask 'popcorn-time' do
   url "https://mirror03.popcorntime.sh/repo/build/Popcorn-Time-#{version}.pkg"
   appcast 'https://github.com/popcorn-official/popcorn-desktop/releases.atom'
   name 'Popcorn Time'
-  homepage 'https://popcorntime.sh/'
+  homepage 'https://popcorntime.app/'
 
   conflicts_with cask: 'popcorn-time-beta'
 
-  app 'Popcorn-Time.app'
+  pkg 'Popcorn-Time-#{version}.pkg'
 
   bundle_id = 'com.nw-builder.popcorn-time'
   uninstall quit: bundle_id
